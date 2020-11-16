@@ -17,8 +17,8 @@ class Memda < Formula
   desc "AWS Lambda Memory Usage Checker"
   homepage "https://ctrlalt.dev/memda"
   url "https://github.com/ctrlaltdev/memda/releases/download/#{VERSION}/memda-#{OS}-#{ARCH}.tar.gz"
-  version #{VERSION}
-  sha256 #{SHA256}
+  version "#{VERSION}"
+  sha256 "#{SHA256}"
   license "MPL-2.0"
 
   def install
