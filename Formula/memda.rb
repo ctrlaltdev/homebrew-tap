@@ -12,13 +12,13 @@ class Memda < Formula
   OS = RAW_OS == "Darwin" ? "darwin" : "linux"
   ARCH = RAW_ARCH == "x86_64" ? "amd64" : "386"
 
-  SHA256 = # {SUMS["#{OS}-${ARCH}"]}
+  SHA256 = SUMS["#{OS}-#{ARCH}"]
 
   desc "AWS Lambda Memory Usage Checker"
   homepage "https://ctrlalt.dev/memda"
   url "https://github.com/ctrlaltdev/memda/releases/download/#{VERSION}/memda-#{OS}-#{ARCH}.tar.gz"
-  version # {VERSION}
-  sha256 # {SHA256}
+  version #{VERSION}
+  sha256 #{SHA256}
   license "MPL-2.0"
 
   def install
