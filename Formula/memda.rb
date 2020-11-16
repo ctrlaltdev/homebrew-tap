@@ -9,11 +9,8 @@ class Memda < Formula
   RAW_OS = `uname -s`.freeze
   RAW_ARCH = `uname -m`.freeze
   
-  OS = RAW_OS == "Darwin" ? "darwin" : "linux"
-  ARCH = RAW_ARCH == "x86_64" ? "amd64" : "386"
-
-  puts RAW_OS == "Darwin"
-  puts RAW_ARCH == "x86_64"
+  OS = RAW_OS == "Darwin\n" ? "darwin" : "linux"
+  ARCH = RAW_ARCH == "x86_64\n" ? "amd64" : "386"
   
   SHA256 = SUMS["#{OS}-#{ARCH}"]
 
