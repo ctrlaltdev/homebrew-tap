@@ -9,7 +9,7 @@ class Memda < Formula
   license "MPL-2.0"
 
   def install
-    bin.install 'bin/memda-darwin-amd64'
+    bin.install 'memda-darwin-amd64'
   end
 
   test do
