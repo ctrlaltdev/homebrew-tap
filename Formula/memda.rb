@@ -9,6 +9,9 @@ class Memda < Formula
   RAW_ARCH = `uname -m`.freeze
   RAW_OS = `uname -s`.freeze
 
+  puts RAW_ARCH
+  puts RAW_OS
+
   OS = RAW_OS == "Darwin" ? "darwin" : "linux"
   ARCH = RAW_ARCH == "x86_64" ? "amd64" : "386"
 
