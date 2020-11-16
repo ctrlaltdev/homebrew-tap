@@ -6,15 +6,15 @@ class Memda < Formula
     "linux-amd64" => "172acc385347afb73c276625070cc2881d918c9ac8a3a352660cb783484d3c55",
     "linux-386" => "723319ca7c77662a6a5154de3a70d0b9d73a6dacea08b17f9c19ec4c9dff81ab"
   ].freeze
-  RAW_ARCH = `uname -m`.freeze
   RAW_OS = `uname -s`.freeze
-
-  puts RAW_ARCH
-  puts RAW_OS
-
+  RAW_ARCH = `uname -m`.freeze
+  
   OS = RAW_OS == "Darwin" ? "darwin" : "linux"
   ARCH = RAW_ARCH == "x86_64" ? "amd64" : "386"
 
+  puts RAW_OS == "Darwin"
+  puts RAW_ARCH == "x86_64"
+  
   SHA256 = SUMS["#{OS}-#{ARCH}"]
 
   desc "AWS Lambda Memory Usage Checker"
