@@ -1,4 +1,4 @@
-class THI < Formula
+class Thi < Formula
   VERSION = "v1.0.0-beta1".freeze
 
   # rubocop:disable Layout/HashAlignment
