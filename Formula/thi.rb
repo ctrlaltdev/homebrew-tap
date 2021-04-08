@@ -1,12 +1,12 @@
 class Thi < Formula
-  VERSION = "v1.0.0-beta1".freeze
+  VERSION = "v1.0.0".freeze
 
   # rubocop:disable Layout/HashAlignment
   SUMS = Hash[
-    "darwin-amd64"  => "d5be9e74d97e6271d9887dcd48d1bd5a17e3a294c2592e364072ae995a735cdc",
-    "darwin-arm64"  => "6409aa4609552b3c53d3dc820d8273dda69bfc38bb8c5842f81e0ff50d200c9a",
-    "linux-amd64"   => "7ce4d563be2175c31e37c7b01d6b5fcc6094aa0e40a1507abf7b299e3c72277a",
-    "linux-arm64"   => "855577be28b9809e39edb10b1ab4231c8b81c37df2dea36f13845f7ac70d5f08",
+    "linux-amd64"  => "df6a7c9c27510e1730303a431edbb90ce517f9462afeec4b43a41529bc3b5654",
+    "linux-arm64"  => "6d38ca5a09c31658844b1483267d2c2682e2edcc4aaf2381b8f6ec2051cbf5c7",
+    "darwin-amd64" => "981d69d0157d070bcfb7e41e3ab57a12dbb08e020f214008eb659828b1f1e5a7",
+    "darwin-arm64" => "e6394dade1a0528dedec487ddcdd47e5fb85526a71aca01ec2e8e9a1f8507e80",
   ].freeze
   # rubocop:enable Layout/HashAlignment
   RAW_OS = `uname -s`.freeze
