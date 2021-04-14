@@ -1,12 +1,12 @@
-class Thi < Formula
-  VERSION = "v1.1.0".freeze
+class Harvest < Formula
+  VERSION = "v1.2.0".freeze
 
   # rubocop:disable Layout/HashAlignment
   SUMS = Hash[
-    "darwin-amd64" => "1f08a5aced923bd9715dffcc89f247bcd92a1024e55eb5e5581e95a21e46c658",
-    "darwin-arm64" => "0be6ed3a4aabc543831be524e562eef2b7a4fbf66b42be28f7dbfd33b95836cc",
-    "linux-amd64"  => "dd6c4b602c4748149fad3784a295bc882944fddcf7f315404e93842920be120d",
-    "linux-arm64"  => "c659fb60590548dfbb25f025b299880d6b6968156433b9343cd8f6b370657117",
+    "linux-amd64"  => "17da2b0c8c2614a016988e1e59939702f0cfbf111a54d9b8fd32920363a8f9c6",
+    "linux-arm64"  => "abc02577f873438a7963ea69e18a8fa47802267a283acc5c08ebda8ef5edfa2b",
+    "darwin-amd64" => "fede8ad9532ba8a845c0a234140d6cb149d9bd5898589b789b1945ca0f6f7eb5",
+    "darwin-arm64" => "3c7aad5fbe1fcd59046f852d5254631e97620f9fd82498a9a7f81b498574a644",
   ].freeze
   # rubocop:enable Layout/HashAlignment
   RAW_OS = `uname -s`.freeze
@@ -26,17 +26,17 @@ class Thi < Formula
   SHA256 = SUMS["#{OS}-#{ARCH}"].freeze
 
   desc "Terminal Harvest Interface"
-  homepage "https://ctrlalt.dev/thi"
-  url "https://github.com/ctrlaltdev/thi/releases/download/#{VERSION}/thi-#{OS}-#{ARCH}.tar.gz"
+  homepage "https://ctrlalt.dev/harvest"
+  url "https://github.com/ctrlaltdev/harvest-cli/releases/download/#{VERSION}/harvest-#{OS}-#{ARCH}.tar.gz"
   version VERSION
   sha256 SHA256
   license "MPL-2.0"
 
   def install
-    bin.install "thi" => "thi"
+    bin.install "harvest" => "harvest"
   end
 
   test do
-    system "#{bin}/thi"
+    system "#{bin}/harvest"
   end
 end
