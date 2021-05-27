@@ -1,12 +1,12 @@
 class Ccc < Formula
-  VERSION = "v1.0.0-alpha".freeze
+  VERSION = "v1.0.0-alpha.1".freeze
 
   # rubocop:disable Layout/HashAlignment
   SUMS = Hash[
-    "darwin-amd64" => "dd761637e24d2117c0d2047ba28841e98e9b15c0fd3955c3a86250ce20c32964",
-    "darwin-arm64" => "c9d0942811465245d59687f62ecd6d09439397e232c4eff19c4d0f396e64e9ce",
-    "linux-amd64" => "1cc595ec7fb6a6fd5d78f922628ae979780c21401d4e014cecd1ba5f4aa49084",
-    "linux-arm64" => "23ca65c9fe95af5465abdd235ddfd45856f641efebc7df2c29c4c11f65df45db"
+    "darwin-amd64" => "de9acc3593a51ebbcc2b487839c185dfee046c119f2cabf48d017757a8389db0",
+    "darwin-arm64" => "ed1bdbc058c3102e067d3b83631da1f92e021f5ad9a8806d4a52f0f7c6540c7c",
+    "linux-amd64"  => "bd495a35cecda867e8e65c42d9b5e83e12c0bf4751e361d138e87fa4c2b11ef6",
+    "linux-arm64"  => "ab2663b7a7aa5f364e688b6b349f2381e7870f42075376ad03ac3f4532a20636"
   ].freeze
   # rubocop:enable Layout/HashAlignment
   RAW_OS = `uname -s`.freeze
