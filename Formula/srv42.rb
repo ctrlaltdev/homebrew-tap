@@ -1,5 +1,5 @@
 class Srv42 < Formula
-  VERSION = "v1..0".freeze
+  VERSION = "v1.1.0".freeze
 
   # rubocop:disable Layout/HashAlignment
   SUMS = Hash[
