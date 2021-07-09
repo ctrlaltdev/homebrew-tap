@@ -1,12 +1,12 @@
 class Diyddns < Formula
-  VERSION = "v2.0.0".freeze
+  VERSION = "v2.1.0".freeze
 
   # rubocop:disable Layout/HashAlignment
   SUMS = Hash[
-    "darwin-amd64" => "75ba86241b3cc1587a803c34cce74322223d961d989d8defdf766c9ce61d5762",
-    "darwin-arm64" => "50d71a6a2cf3cb263c57cdbf55874eb980ec31535cfefd87bb165d8222e53dd2",
-    "linux-amd64"  => "9f166e940c76862fe891da56c4bf845f72934f8e0dd6c05366d2200712c92ac2",
-    "linux-arm64"  => "2374f9bb5eb70985eb64d4cf2bb61c428b9e3906eb710efe325621e8c4a61db7"
+    "darwin-amd64" => "96fa331054b1e23864cf59bf31e1e5c2a58a2eb3885b3e03ba563dee13c512fd",
+    "darwin-arm64" => "dc19e9f4ddeb1f03b604c7bcd66978e34400ad3777fb392310a96b77c3d9de0e",
+    "linux-amd64"  => "8f638a5ec585507419d3b12d7a9957e723e2a26099093ce93c949c2b2ad81507",
+    "linux-arm64"  => "c604a8a733cdde243a9d40566987793f56db643d7c78db4083f26b05ad35a40f"
   ].freeze
   # rubocop:enable Layout/HashAlignment
   RAW_OS = `uname -s`.freeze
