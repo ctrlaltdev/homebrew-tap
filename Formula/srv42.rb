@@ -1,12 +1,12 @@
 class Srv42 < Formula
-  VERSION = "v1.1.0".freeze
+  VERSION = "v1.2.0".freeze
 
   # rubocop:disable Layout/HashAlignment
   SUMS = Hash[
-    "darwin-amd64" => "014b86b4a05f68f1a4098df0e46b5dbe7a493c808364d64159f0d77eceb03df4",
-    "darwin-arm64" => "a090928ca600309fd376b640ad66d3b848e21ed41dfd8523d6d0a767d7a09405",
-    "linux-amd64"  => "0213bcf3097c7e78244fb6bbcdb7893f2e1f29488c28c21146cdb42397e13c19",
-    "linux-arm64"  => "dbb67aa6bd1fef00a6c6ec23159fa44f6dbfdb233b92bdff85a2f0ac804ba274",
+    "darwin-amd64" => "d5e92a2339ea705feb71d6472d7fc9bbf4d5a3f92732aa49fab668225c18dcb3",
+    "darwin-arm64" => "df0383b2eb4a4ea175b2edadce23a47e4ff24bcc97e12cb1d1a0d5f4d11e12a7",
+    "linux-amd64" => "27019822f9128b1485b25098e739c0a76e2d2dbdb9d1bfb643c2233fd8226f83",
+    "linux-arm64" => "0ed932264310e86cc842adfbf512e92b7e61a75b31c78af790d68c184e54e12b",
   ].freeze
   # rubocop:enable Layout/HashAlignment
   RAW_OS = `uname -s`.freeze
